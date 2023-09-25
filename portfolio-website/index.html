@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayali's Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet" />
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">
+        <img src="snLogoSmT.png" />
+      </div>
+      <div class="navBar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Experience</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Skills</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="leftLinksSection">
+      <img class="linkedin" src="linkedin-icon.png" width="30" height="30"/>
+      <img class="github" src="github-icon.png"  width="30" height="30"/>
+      <hr class="line-after">
+    </section>
+    <section class="midInfoSection">
+      <section class="firstSection">
+        <div class="leftSection">
+          <div class="line1">Hello World! I am</div>
+          <div class="name">
+            <span id="name"></span>
+          </div>
+          <div class="subline">I am a software engineer passionate about coding.</div>
+
+          <br>
+          <div class="intro">
+            <p>
+              Presently a Software Engineering master's student, I am set to graduate in May 2024 and am looking for
+              full time opportunities.
+            </p>
+            <br>
+            <p>
+              With a passion for programming ignited by years of hands-on experience, I've journeyed through 3 years of
+              real-world projects, honing my skills and embracing the thrill of turning lines of code into innovative
+              solutions.
+            </p>
+            <br>
+            <p>
+              Join me as I showcase my endeavors and share my love for the art of software development!
+            </p>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="girl_colorScheme.png" />
+        </div>
+      </section>
+
+      <hr class="mainHR">
+
+      <section class="secondSection">
+        <h1>About Me</h1>
+      </section>
+      <section class="thirdSection">
+        <h1>Work Experience</h1>
+      </section>
+    </section>
+
+    <section class="rightLinksSection">
+      <div class="email-section">
+        <a class="email" href="mailto: nilangekar.sayali@gmail.com">nilangekar.sayali@gmail.com</a>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+<!-- Load library from the CDN -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+  var typed = new Typed('#name', {
+    strings: ['Sayali Nilangekar.'],
+    typeSpeed: 50,
+  });
+</script>
+
+</html>
