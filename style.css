@@ -57,7 +57,15 @@ main{
 
 .left {
   padding-top: 30px;
+  /* float: left; */
 }
+
+.left img{
+  width:400px;
+  height:450px;
+  margin-left: -40px;
+}
+
 
 .firstSection {
   display: flex;
