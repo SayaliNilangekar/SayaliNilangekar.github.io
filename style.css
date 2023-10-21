@@ -312,12 +312,45 @@ main{
 .skills-space, .work-ex-space {
     height: 600px;
 }
+
+.skills-header{
+  display: flex;
+  justify-content: center;
+}
+
 .skills-title, .work-ex-title{
   justify-content: center;
   margin-top: 50px;
   text-align: center;
   font-size: xx-large;
   font-weight: 400;
+}
+
+.line-end-left{
+  margin-top: 50px;
+  margin-right: 22px;
+  filter: brightness(900%);
+}
+
+.line-left{
+  margin-top: 48px;
+  margin-right: 40px;
+  transform: rotate(90deg);
+  border: 0.3px solid white;
+}
+
+.line-end-right{
+  margin-top: 48px;
+  margin-left: 22px;
+  transform: rotate(180deg);
+  filter: brightness(900%);
+}
+
+.line-right{
+  margin-top: 47px;
+  margin-left: 40px;
+  transform: rotate(90deg);
+  border: 0.3px solid white;
 }
 
 .jsIcon, .tsIcon {
