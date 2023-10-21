@@ -64,9 +64,13 @@ main{
 }
 
 .left img{
-  width:400px;
-  height:450px;
-  margin-left: -40px;
+  /* width:400px;
+  height:450px; */
+  width: 80%;
+  height: 80%;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* margin-left: -40px; */
 }
 
 
@@ -319,6 +323,18 @@ main{
 .jsIcon, .tsIcon {
   border-radius: 14px;
 }
+
+.pythonIcon, .javaIcon, .jsIcon, .tsIcon, .htmlIcon, .cssIcon, .angularIcon, .flutterIcon, .jupyterIcon, .reactIcon, .cIcon, .cppIcon, .dockerIcon, .djangoIcon, .awsIcon, .mysqlIcon, .gitIcon, .kotlinIcon {
+  transition-duration: 1s;
+  transition-property: transform;
+  &:hover{
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+
+
 
 /* .kotlinIcon{
   border-radius: 1px;
