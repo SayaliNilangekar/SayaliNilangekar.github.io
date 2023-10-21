@@ -325,11 +325,21 @@ main{
 }
 
 .pythonIcon, .javaIcon, .jsIcon, .tsIcon, .htmlIcon, .cssIcon, .angularIcon, .flutterIcon, .jupyterIcon, .reactIcon, .cIcon, .cppIcon, .dockerIcon, .djangoIcon, .awsIcon, .mysqlIcon, .gitIcon, .kotlinIcon {
-  transition-duration: 1s;
+  transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+
   transition-property: transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -webkit-transition-property: -webkit-transform;
+
   &:hover{
     transform: rotateY(360deg);
     -webkit-transform: rotateY(360deg);
+    -moz-transform:rotateY(360deg); 
+    -o-transform:rotateY(360deg);
   }
 }
 
