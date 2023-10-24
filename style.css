@@ -194,7 +194,8 @@ main{
     color: white;
     font-family: "Source Code Pro", monospace;
     text-decoration: none;
-   
+    font-weight: 200;
+
     &:after {
 
       content: " ";
@@ -326,10 +327,41 @@ main{
   font-weight: 400;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .line-end-left{
   margin-top: 50px;
   margin-right: 22px;
   filter: brightness(900%);
+  animation: fadeIn 2s; 
+  animation-iteration-count: 5;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 .line-left{
@@ -337,6 +369,12 @@ main{
   margin-right: 40px;
   transform: rotate(90deg);
   border: 0.3px solid white;
+  animation: fadeIn 2s; 
+  animation-iteration-count: 5;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 .line-end-right{
@@ -344,6 +382,12 @@ main{
   margin-left: 22px;
   transform: rotate(180deg);
   filter: brightness(900%);
+  animation: fadeIn 2s; 
+  animation-iteration-count: 5;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 .line-right{
@@ -351,13 +395,40 @@ main{
   margin-left: 40px;
   transform: rotate(90deg);
   border: 0.3px solid white;
+  animation: fadeIn 2s; 
+  animation-iteration-count: 5;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 .jsIcon, .tsIcon {
   border-radius: 14px;
 }
 
-.pythonIcon, .javaIcon, .jsIcon, .tsIcon, .htmlIcon, .cssIcon, .angularIcon, .flutterIcon, .jupyterIcon, .reactIcon, .cIcon, .cppIcon, .dockerIcon, .djangoIcon, .awsIcon, .mysqlIcon, .gitIcon, .kotlinIcon {
+.icon {
+  transition: transform 0.6s ease; /* Add smooth transition */
+}
+
+.icon:hover {
+  /* animation: iconMove 0.5s ease forwards; Apply animation on hover */
+  transform: translate(0,0);
+}
+
+@keyframes iconMove {
+  0% {
+      transform: translate(0, 0); /* Initial position */
+  }
+  50% {
+      transform: translate(20px, 20px); /* Move icon when hovered */
+  }
+  100% {
+      transform: translate(0, 0); /* Return to original position */
+  }
+}
+
+/* .pythonIcon, .javaIcon, .htmlIcon, .jsIcon, .tsIcon, .cssIcon, .angularIcon, .flutterIcon, .jupyterIcon, .reactIcon, .cIcon, .cppIcon, .dockerIcon, .djangoIcon, .awsIcon, .mysqlIcon, .gitIcon, .kotlinIcon {
   transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;
@@ -375,13 +446,29 @@ main{
     -o-transform:rotateY(360deg);
   }
 }
-
+ */
 
 
 
 /* .kotlinIcon{
   border-radius: 1px;
 } */
+
+
+.work-ex-container{
+  padding: 10px 40px;
+  position: relative;
+  width: 35%;
+  background: rgba(0,0,0,0.3);
+}
+
+.work-ex-text-box{
+  padding: 20px 30px;
+  /* background: #ffff; */
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
 
 @media screen and (max-width: 600px) {
 
