@@ -1,5 +1,5 @@
 const icons = document.querySelectorAll('.icon');
-const threshold = 10; // Adjust this threshold as needed
+const threshold = 15; // Adjust this threshold as needed
 
 icons.forEach((icon) => {
     icon.addEventListener('mousemove', (e) => {
@@ -12,11 +12,11 @@ icons.forEach((icon) => {
         let moveY = 0;
 
         if (Math.abs(x) > threshold) {
-            moveX = -x * 3;
+            moveX = -x * 20;
         }
 
         if (Math.abs(y) > threshold) {
-            moveY = -y * 3;
+            moveY = -y * 20;
         }
 
         icon.style.transform = `translate(${moveX}px, ${moveY}px)`;
