@@ -37,7 +37,7 @@
           <li><a href="#skills-section-href">Skills</a></li>
           <li><a href="#work-ex-section-href">Experience</a></li>
           <li><a href="#projects-section-href">Projects</a></li>
-          <li><a href="#leadership-section-href">Leadership</a></li>
+          <!-- <li><a href="#leadership-section-href">Leadership</a></li> -->
           <li><a href="/">Fun :)</a></li>
           <li><a href="/">Contact</a></li>
         </ul>
@@ -179,7 +179,24 @@
       <br>
 
 
-      <section class="fourthSection">
+      <section class="fourthSection" >
+        <div id="fourthSection">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+        <script type="text/javascript">
+          VANTA.TOPOLOGY({
+            el: "#fourthSection",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x#483b6b,
+            backgroundColor: 0x#262037
+          })
+</script>
         <div class="work-ex-linker" id="work-ex-section-href"></div>
         <h1 class="work-ex-title">WORK EXPERIENCE</h1>
         <div class="work-ex-timeline">
@@ -225,6 +242,7 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
       <br>
       <br>
@@ -237,151 +255,163 @@
         <h1 class="projects-title">PROJECTS</h1>
         <br>
         <div class="projects-container">
-            <div class="particles-js" id="particles-js"></div>
-            <div class="projects-row">
-              <a href="https://github.com/SayaliNilangekar/airport-management-system" target="_blank"
-                class="project-card">
-                <h3>AIRPORT MANAGEMENT SYSTEM</h3>
-                <div style="font-weight: 400; text-decoration: underline; margin-top: 30px;">Project Description:</div>
-                <p style="font-weight: 300;">Developed a scalable full-stack web application to efficiently track
-                  airline and airport data using Agile methodology and design patterns. Deployed the web app on an AWS EC2 instance with auto scaling and load balancing.</p>
-                <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
-                <p style="font-weight: 300;">Full-stack Development, Scalable and Fault-tolerant Systems, User
-                  Experience </p>
-                <div class="project-technologies">
-                  <ul>
-                    <li>Python </li>
-                    <li> • </li>
-                    <li>Django REST framework </li>
-                    <li> • </li>
-                    <li>Javascript</li>
-                    <li> • </li>
-                    <li>React  </li>
-                    <li> • </li>
-                    <li>MySQL</li>
-                    <li> • </li>
-                    <li>AWS RDS  </li>
-                    <li> • </li>
-                    <li>AWS EC2 </li>
-                    <li> • </li>
-                    <li>AWS Load Balancing  </li>
-                    <li> • </li>
-                    <li>AWS Auto-Scaling</li>
-                  </ul>
-                </div>
-                <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
-              </a>
-              <a href="https://github.com/SayaliNilangekar/CMPE257-HotelIdentification" target="_blank"
-                class="project-card">
-                <h3>HOTEL IDENTIFICATION TO COMBAT HUMAN TRAFFICKING</h3>
-                <p style="font-weight: 400; text-decoration: underline; margin-bottom: 5px;">Project Description:</p>
-                <p style="font-weight: 300;">Created a deep learning model that leverages computer vision, specifically
-                  object detection and scene recognition, to identify hotel rooms within a crowdsourced image dataset.
-                  This innovative solution aims to combat human trafficking by assisting law enforcement and
-                  organizations in locating potential trafficking locations.</p>
-                <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
-                <p style="font-weight: 300;">Deep Learning, Computer Vision, Data Visualization, Data Pre-processing, Model Performance
-                  Evaluation and Optimization </p>
-                <div class="project-technologies">
-                  <ul>
-                    <li>Python </li>
-                    <li> • </li>
-                    <li>Jupyter Notebook </li>
-                    <li> • </li>
-                    <li>Google Cloud </li>
-                  </ul>
-                </div>
-                <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
-              </a>
-              <a href="https://github.com/SayaliNilangekar/cmpe-255-music-decade-prediction" target="_blank"
-                class="project-card">
-                <h3>MUSIC DECADE PREDICTION</h3>
-                <p style="font-weight: 400; text-decoration: underline; margin-top: 30px;">Project Description:</p>
-                <p style="font-weight: 300;">Engineered a machine learning model to predict the release decades of songs based on their audio features. This project involved an in-depth exploration of a range of classic machine learning algorithms, including linear and lasso regression, XGBoost regression, as well as LDA (Linear Discriminant Analysis), Random Forest, and Extra Trees classifier algorithms.</p>
-                <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
-                <p style="font-weight: 300;">Machine Learning, Data Processing and Analysis, Model Comparison
-                  Experience </p>
-                <!-- <p><strong>Technologies Used:</strong> Python, Django REST framework, Javascript, React, MySQL, AWS (RDS, EC2, Elastic Load Balancing, Auto-Scaling Groups)</p> -->
-                <div class="project-technologies">
-                  <ul>
-                    <li>Python</li>
-                    <li> • </li>
-                    <li>Jupyter Notebook </li>
-                    <li> • </li>
-                    <li>scikit Learn  </li>
-                    <li> • </li>
-                    <li>pandas  </li>
-                    <li> • </li>
-                    <li>numpy </li>
-                    <li> • </li>
-                    <li>matplotlib </li>
-                    <li> • </li>
-                    <li>seaborn</li>
-                    <li> • </li>
-                    <li>joblib </li>
-                  </ul>
-                </div>
-                <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
-              </a>
-            </div>
-            <div class="projects-row">
-              <a href="https://github.com/SayaliNilangekar/Image-Morphing-Project" target="_blank" class="project-card">
-                <h3>IMAGE MORPHER</h3>
-                <p style="font-weight: 400; text-decoration: underline;">Project Description:</p>
-                <p style="font-weight: 300;">Designed and developed an interactive Graphical User Interface (GUI) application using Python. This intuitive application creates morphed images by seamlessly blending two input images into a single, artistic representation.</p>
-                <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
-                <p style="font-weight: 300;">Image Processing, Graphical User Interface</p>
-                <!-- <p><strong>Technologies Used:</strong> Python, Django REST framework, Javascript, React, MySQL, AWS (RDS, EC2, Elastic Load Balancing, Auto-Scaling Groups)</p> -->
-                <div class="project-technologies">
-                  <ul>
-                    <li>Python</li>
-                    <li> • </li>
-                    <li>imageio</li>
-                    <li> • </li>
-                    <li>pillow</li>
-                    <li> • </li>
-                    <li>numpy</li>
-                    <li> • </li>
-                    <li>scipy</li>
-                  </ul>
-                </div>
-                <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
-              </a>
-              <a href="https://github.com/SayaliNilangekar/zork-game" target="_blank" class="project-card">
-                <h3>ZORK GAME</h3>
-                <p style="font-weight: 400; text-decoration: underline;">Project Description:</p>
-                <p style="font-weight: 300;">Created a text-based adventure game inspired by the classic Zork series. This interactive storytelling experience was crafted using C++ and parsing XML files, offering players a diverse range of adventures.</p>
-                <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
-                <p style="font-weight: 300;">Game Development, File Parsing </p>
-                <div class="project-technologies">
-                  <ul>
-                    <li style="margin-right: 3px;">C++ </li>
-                    <li style="margin-right: 3px;"> • </li>
-                    <li>XML </li>
-                  </ul>
-                </div>
-                <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
-              </a>
-              <a href="https://github.com/SayaliNilangekar/ECE468-project-mocha-compiler" target="_blank"
-                class="project-card">
-                <h3>MOCHA - A COMPILER FOR MICRO</h3>
-                <p style="font-weight: 400; text-decoration: underline;">Project Description:</p>
-                <p style="font-weight: 300;">Designed and implemented a compiler using C++, Flex, and Bison to translate code written in the Micro programming language into Tiny Assembly. This project covers the essential phases of scanning and parsing while also integrating advanced concepts, including the construction of Abstract Syntax Trees and the implementation of efficient register allocation techniques.</p>
-                <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
-                <p style="font-weight: 300;">Compiler Programming, Lexical Analysis and Parsing, Register Allocation </p>
-                <!-- <p><strong>Technologies Used:</strong> Python, Django REST framework, Javascript, React, MySQL, AWS (RDS, EC2, Elastic Load Balancing, Auto-Scaling Groups)</p> -->
-                <div class="project-technologies">
-                  <ul>
-                    <li style="margin-right: 3px;" >C++</li>
-                    <li style="margin-right: 3px;"> • </li>
-                    <li>flex </li>
-                    <li style="margin-right: 3px;"> • </li>
-                    <li>bison </li>
-                  </ul>
-                </div>
-                <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
-              </a>
-            </div>
+          <div class="particles-js" id="particles-js"></div>
+          <div class="projects-row">
+            <a href="https://github.com/SayaliNilangekar/airport-management-system" target="_blank"
+              class="project-card">
+              <h3>AIRPORT MANAGEMENT SYSTEM</h3>
+              <div style="font-weight: 400; text-decoration: underline; margin-top: 30px;">Project Description:</div>
+              <p style="font-weight: 300;">Developed a scalable full-stack web application to efficiently track
+                airline and airport data using Agile methodology and design patterns. Deployed the web app on an AWS EC2
+                instance with auto scaling and load balancing.</p>
+              <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
+              <p style="font-weight: 300;">Full-stack Development, Scalable and Fault-tolerant Systems, User
+                Experience </p>
+              <div class="project-technologies">
+                <ul>
+                  <li>Python </li>
+                  <li> • </li>
+                  <li>Django REST framework </li>
+                  <li> • </li>
+                  <li>Javascript</li>
+                  <li> • </li>
+                  <li>React </li>
+                  <li> • </li>
+                  <li>MySQL</li>
+                  <li> • </li>
+                  <li>AWS RDS </li>
+                  <li> • </li>
+                  <li>AWS EC2 </li>
+                  <li> • </li>
+                  <li>AWS Load Balancing </li>
+                  <li> • </li>
+                  <li>AWS Auto-Scaling</li>
+                </ul>
+              </div>
+              <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
+            </a>
+            <a href="https://github.com/SayaliNilangekar/CMPE257-HotelIdentification" target="_blank"
+              class="project-card">
+              <h3>HOTEL IDENTIFICATION TO COMBAT HUMAN TRAFFICKING</h3>
+              <p style="font-weight: 400; text-decoration: underline; margin-bottom: 5px;">Project Description:</p>
+              <p style="font-weight: 300;">Created a deep learning model that leverages computer vision, specifically
+                object detection and scene recognition, to identify hotel rooms within a crowdsourced image dataset.
+                This innovative solution aims to combat human trafficking by assisting law enforcement and
+                organizations in locating potential trafficking locations.</p>
+              <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
+              <p style="font-weight: 300;">Deep Learning, Computer Vision, Data Visualization, Data Pre-processing,
+                Model Performance
+                Evaluation and Optimization </p>
+              <div class="project-technologies">
+                <ul>
+                  <li>Python </li>
+                  <li> • </li>
+                  <li>Jupyter Notebook </li>
+                  <li> • </li>
+                  <li>Google Cloud </li>
+                </ul>
+              </div>
+              <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
+            </a>
+            <a href="https://github.com/SayaliNilangekar/cmpe-255-music-decade-prediction" target="_blank"
+              class="project-card">
+              <h3>MUSIC DECADE PREDICTION</h3>
+              <p style="font-weight: 400; text-decoration: underline; margin-top: 30px;">Project Description:</p>
+              <p style="font-weight: 300;">Engineered a machine learning model to predict the release decades of songs
+                based on their audio features. This project involved an in-depth exploration of a range of classic
+                machine learning algorithms, including linear and lasso regression, XGBoost regression, as well as LDA
+                (Linear Discriminant Analysis), Random Forest, and Extra Trees classifier algorithms.</p>
+              <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
+              <p style="font-weight: 300;">Machine Learning, Data Processing and Analysis, Model Comparison
+                Experience </p>
+              <!-- <p><strong>Technologies Used:</strong> Python, Django REST framework, Javascript, React, MySQL, AWS (RDS, EC2, Elastic Load Balancing, Auto-Scaling Groups)</p> -->
+              <div class="project-technologies">
+                <ul>
+                  <li>Python</li>
+                  <li> • </li>
+                  <li>Jupyter Notebook </li>
+                  <li> • </li>
+                  <li>scikit Learn </li>
+                  <li> • </li>
+                  <li>pandas </li>
+                  <li> • </li>
+                  <li>numpy </li>
+                  <li> • </li>
+                  <li>matplotlib </li>
+                  <li> • </li>
+                  <li>seaborn</li>
+                  <li> • </li>
+                  <li>joblib </li>
+                </ul>
+              </div>
+              <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
+            </a>
+          </div>
+          <div class="projects-row">
+            <a href="https://github.com/SayaliNilangekar/Image-Morphing-Project" target="_blank" class="project-card">
+              <h3>IMAGE MORPHER</h3>
+              <p style="font-weight: 400; text-decoration: underline;">Project Description:</p>
+              <p style="font-weight: 300;">Designed and developed an interactive Graphical User Interface (GUI)
+                application using Python. This intuitive application creates morphed images by seamlessly blending two
+                input images into a single, artistic representation.</p>
+              <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
+              <p style="font-weight: 300;">Image Processing, Graphical User Interface</p>
+              <!-- <p><strong>Technologies Used:</strong> Python, Django REST framework, Javascript, React, MySQL, AWS (RDS, EC2, Elastic Load Balancing, Auto-Scaling Groups)</p> -->
+              <div class="project-technologies">
+                <ul>
+                  <li>Python</li>
+                  <li> • </li>
+                  <li>imageio</li>
+                  <li> • </li>
+                  <li>pillow</li>
+                  <li> • </li>
+                  <li>numpy</li>
+                  <li> • </li>
+                  <li>scipy</li>
+                </ul>
+              </div>
+              <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
+            </a>
+            <a href="https://github.com/SayaliNilangekar/zork-game" target="_blank" class="project-card">
+              <h3>ZORK GAME</h3>
+              <p style="font-weight: 400; text-decoration: underline;">Project Description:</p>
+              <p style="font-weight: 300;">Created a text-based adventure game inspired by the classic Zork series. This
+                interactive storytelling experience was crafted using C++ and parsing XML files, offering players a
+                diverse range of adventures.</p>
+              <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
+              <p style="font-weight: 300;">Game Development, File Parsing </p>
+              <div class="project-technologies">
+                <ul>
+                  <li style="margin-right: 3px;">C++ </li>
+                  <li style="margin-right: 3px;"> • </li>
+                  <li>XML </li>
+                </ul>
+              </div>
+              <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
+            </a>
+            <a href="https://github.com/SayaliNilangekar/ECE468-project-mocha-compiler" target="_blank"
+              class="project-card">
+              <h3>MOCHA - A COMPILER FOR MICRO</h3>
+              <p style="font-weight: 400; text-decoration: underline;">Project Description:</p>
+              <p style="font-weight: 300;">Designed and implemented a compiler using C++, Flex, and Bison to translate
+                code written in the Micro programming language into Tiny Assembly. This project covers the essential
+                phases of scanning and parsing while also integrating advanced concepts, including the construction of
+                Abstract Syntax Trees and the implementation of efficient register allocation techniques.</p>
+              <p style="font-weight: 400; text-decoration: underline;">Skills:</p>
+              <p style="font-weight: 300;">Compiler Programming, Lexical Analysis and Parsing, Register Allocation </p>
+              <!-- <p><strong>Technologies Used:</strong> Python, Django REST framework, Javascript, React, MySQL, AWS (RDS, EC2, Elastic Load Balancing, Auto-Scaling Groups)</p> -->
+              <div class="project-technologies">
+                <ul>
+                  <li style="margin-right: 3px;">C++</li>
+                  <li style="margin-right: 3px;"> • </li>
+                  <li>flex </li>
+                  <li style="margin-right: 3px;"> • </li>
+                  <li>bison </li>
+                </ul>
+              </div>
+              <img class="github_project" src="img/new-window-blue.png" width="15" height="15" />
+            </a>
+          </div>
 
         </div>
       </section>
@@ -391,11 +421,11 @@
       <br>
 
 
-      <section class="sixthSection">
+      <!-- <section class="sixthSection">
         <div class="leadership-linker" id="leadership-section-href"></div>
         <h1 class="leadership-title">LEADERSHIP</h1>
         <div class="leadership-space"></div>
-      </section>
+      </section> -->
 
 
 
@@ -422,6 +452,8 @@
     typeSpeed: 50,
   });
 </script>
+
+
 
 <script>
   particlesJS("particles-js", {
