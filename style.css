@@ -306,6 +306,7 @@ main {
   margin-top: 30vh;
   justify-content: center;
   height: 130vh;
+  /* color: #14111e */
   background: linear-gradient(to bottom, transparent 0%, #09080c 100%);
 }
 
@@ -507,7 +508,12 @@ main {
   position: relative;
   /* background: #221b2e; */
   z-index: -2;
-  height: 150vh;
+  height: 180vh;
+}
+
+.fourthSectionDiv{
+  height: 180vh;
+  z-index: -2;
 }
 
 .intuit-logo,
@@ -642,7 +648,7 @@ main {
   /* max-width: 80vw; */
   position: relative;
   z-index: 1;
-  margin-top: 30vh;
+  /* margin-top: 30vh; */
   height: 1350px;
   justify-content: center;
 }
