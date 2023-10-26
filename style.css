@@ -303,9 +303,9 @@ main {
 
 .thirdSection {
   /* max-width: 80vw; */
-  margin-top: 30vh;
+  /* margin-top: 30vh; */
   justify-content: center;
-  height: 130vh;
+  height: 110vh;
   /* color: #14111e */
   background: linear-gradient(to bottom, transparent 0%, #09080c 100%);
 }
@@ -506,13 +506,13 @@ main {
 
 .fourthSection{
   position: relative;
-  /* background: #221b2e; */
+  /* background: #48267f; */
   z-index: -2;
-  height: 180vh;
+  height: 150vh;
 }
 
 .fourthSectionDiv{
-  height: 180vh;
+  height: 150vh;
   z-index: -2;
 }
 
